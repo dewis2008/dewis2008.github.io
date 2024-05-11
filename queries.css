@@ -1,0 +1,423 @@
+@media screen and (max-width: 767px) {
+  .NavBar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 1rem;
+    position: fixed;
+  }
+
+  .logo {
+    width: 7rem;
+    height: 3rem;
+  }
+
+  .ham {
+    display: flex;
+    align-items: center;
+    gap: 230px;
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+  .hamburger #closeHam {
+    display: none;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    color: orange;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    order: 1;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-description {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .aboutme-txt {
+    font-size: 1.3rem;
+  }
+
+  .contact-list {
+    font-size: 1.3;
+  }
+
+  .sticky {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin-bottom: 3.4rem;
+    height: 70px;
+  }
+
+  .main-nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding-top: 60px;
+    gap: 10vh;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-hero {
+    padding-bottom: 5rem;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 80vw;
+    height: 10%;
+  }
+
+  .photo1 {
+    width: auto;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .img-txt {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+
+  .photobox {
+    order: 5;
+  }
+
+  .html,
+  .css,
+  .bootstrap,
+  .javascript {
+    width: 100px;
+    height: 100px;
+  }
+
+  .html1 {
+    width: 65px;
+    height: 90px;
+  }
+
+  .css1 {
+    width: 250px;
+    height: 100px;
+  }
+
+  .javascript1 {
+    width: 150px;
+    height: 90px;
+  }
+
+  .bootstrap1 {
+    height: 130px;
+    width: 130px;
+  }
+
+  .aboutme-textbox {
+    align-items: center;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 10rem;
+  }
+
+  .skills-txt {
+    padding-top: 5rem;
+  }
+
+  .downloadcv {
+    margin-left: 0;
+  }
+
+  .downloadcv1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-inner {
+    width: 100vw;
+  }
+
+  :root {
+    --carousel-height: 250px;
+    --carousel-nav-btn-dim: 2em;
+    --carousel-caption-padding: 1em;
+  }
+
+  .btn-slide1 {
+    height: 2rem;
+    width: 6rem;
+  }
+
+  .skills-1 {
+    gap: 30px;
+  }
+
+  .portfolio {
+    padding-bottom: 14rem;
+  }
+
+  .time {
+    padding-top: 4.2rem;
+  }
+
+  .contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .copytext {
+    width: 80vw;
+    text-align: center;
+  }
+
+  .modal-window.small {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .NavBar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 1rem;
+    position: fixed;
+  }
+
+  .logo {
+    width: 7rem;
+    height: 3rem;
+  }
+
+  .ham {
+    display: flex;
+    align-items: center;
+    gap: 550px;
+  }
+
+  .skills {
+    padding-bottom: 10rem;
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+  .hamburger #closeHam {
+    display: none;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    color: orange;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    order: 1;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-description {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .aboutme-txt {
+    font-size: 1.3rem;
+  }
+
+  .contact-list {
+    font-size: 1.3;
+  }
+
+  .sticky {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin-bottom: 3.4rem;
+    height: 70px;
+  }
+
+  .main-nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding-top: 60px;
+    gap: 10vh;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-hero {
+    padding-bottom: 5rem;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 70vw;
+    height: 10%;
+  }
+
+  .photo1 {
+    width: auto;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .img-txt {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+
+  .photobox {
+    order: 5;
+  }
+
+  .html,
+  .css,
+  .bootstrap,
+  .javascript {
+    width: 100px;
+    height: 100px;
+  }
+
+  .html1 {
+    width: 65px;
+    height: 90px;
+  }
+
+  .css1 {
+    width: 250px;
+    height: 100px;
+  }
+
+  .javascript1 {
+    width: 150px;
+    height: 90px;
+  }
+
+  .bootstrap1 {
+    height: 130px;
+    width: 130px;
+  }
+
+  .aboutme-textbox {
+    align-items: center;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 10rem;
+  }
+
+  .skills-txt {
+    padding-top: 10rem;
+  }
+
+  .downloadcv {
+    margin-left: 0;
+  }
+
+  .downloadcv1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-inner {
+    width: 70vw;
+  }
+
+  :root {
+    --carousel-height: 250px;
+    --carousel-nav-btn-dim: 2em;
+    --carousel-caption-padding: 1em;
+  }
+
+  .btn-slide1 {
+    height: 2rem;
+    width: 6rem;
+  }
+
+  .skills-1 {
+    gap: 30px;
+  }
+
+  .portfolio {
+    padding-bottom: 20rem;
+  }
+
+  .time {
+    padding-top: 4.2rem;
+  }
+
+  .contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .copytext {
+    width: 80vw;
+    text-align: center;
+  }
+
+  .modal-window.small {
+    width: 80vw;
+  }
+}
