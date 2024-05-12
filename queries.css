@@ -171,7 +171,7 @@
   }
 
   :root {
-    --carousel-height: 250px;
+    --carousel-height: 220px;
     --carousel-nav-btn-dim: 2em;
     --carousel-caption-padding: 1em;
   }

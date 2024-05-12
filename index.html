@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Deividas Pilibaitis</title>
     <link rel="icon" href="img/programming.webp" type="image/icon type" />
@@ -72,15 +73,15 @@
 
       <section class="about-me">
         <div class="img-txt">
-          <div class="photobox">
+          <div class="photobox" data-aos="zoom-in-up">
             <img
-              class="photo1 js-scroll slide-right"
+              class="photo1"
               src="img/Photo.webp"
               alt="Deividas Pilibaitis"
             />
           </div>
           <div>
-            <div class="aboutme-textbox js-scroll slide-left">
+            <div class="aboutme-textbox" data-aos="zoom-in-down">
               <h2 class="hello">
                 Hello, I Am <span class="David">Deividas Pilibaitis</span>
               </h2>
@@ -94,7 +95,11 @@
                 and frameworks without restriction.
               </p>
             </div>
-            <div class="contact-list js-scroll slide-right">
+            <div
+              class="contact-list"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <ul>
                 <li>Name</li>
                 <li>Age</li>
@@ -110,11 +115,13 @@
                 <li>: deiwisp@gmail.com</li>
               </ul>
             </div>
-            <div class="downloadcv1">
+            <div
+              class="downloadcv1"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <a href="CV/CV_EN.pdf" download="Deividas_Pilibaitis_CV"
-                ><button class="downloadcv js-scroll slide-left">
-                  Download CV
-                </button></a
+                ><button class="downloadcv">Download CV</button></a
               >
             </div>
           </div>
@@ -122,7 +129,7 @@
       </section>
 
       <section class="skills">
-        <div class="skills-txt js-scroll slide-right">
+        <div class="skills-txt" data-aos="zoom-in-up">
           <h2 class="hello">My <span class="David">Skills</span></h2>
           <p class="aboutme-txt">
             My journey with HTML, CSS, Bootstrap, and JavaScript has been an
@@ -136,7 +143,7 @@
           </p>
         </div>
 
-        <div class="skills-1 js-scroll slide-left">
+        <div class="skills-1" data-aos="flip-right">
           <div class="html">
             <img class="html1" src="img/html.webp" alt="Html Logo" />
           </div>
@@ -152,7 +159,7 @@
           </div>
         </div>
 
-        <div class="skills-2 js-scroll slide-right">
+        <div class="skills-2" data-aos="flip-right">
           <div class="bootstrap">
             <img
               class="bootstrap1"
@@ -164,7 +171,12 @@
       </section>
 
       <section class="portfolio">
-        <div class="skills-txt js-scroll slide-left">
+        <div
+          class="skills-txt"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <h2 class="hello">My <span class="David">Portfolio</span></h2>
           <p class="aboutme-txt">
             Welcome to my portfolio collection! This curated selection showcases
@@ -175,7 +187,12 @@
           </p>
         </div>
 
-        <div class="site-container js-scroll slide-right">
+        <div
+          class="site-container"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <div
             id="carousel-1"
             class="carousel"
@@ -314,7 +331,7 @@
           <div class="modal-window small">
             <span class="close" data-dismiss="modal">&times;</span>
             <p class="modal-description">
-              My portfolio website made with HTML, CSS, JS
+              My portfolio website made with HTML, CSS, JS, AOS.js
             </p>
             <img
               width="100%"
@@ -338,14 +355,14 @@
       </section>
 
       <section class="time">
-        <div class="timeline">
-          <div class="container left js-scroll slide-left">
+        <div class="timeline" data-aos="zoom-in-up">
+          <div class="container left">
             <div class="content">
               <h2>2023/09/01</h2>
               <p>Lithuanian Business College <br />Klaipėda <br />Lithuanian</p>
             </div>
           </div>
-          <div class="container right js-scroll slide-left">
+          <div class="container right">
             <div class="content">
               <h2>2015-2023</h2>
               <p>
@@ -354,7 +371,7 @@
               </p>
             </div>
           </div>
-          <div class="container left js-scroll slide-right">
+          <div class="container left">
             <div class="content">
               <h2>2014/06/01</h2>
               <p>
@@ -363,7 +380,7 @@
               </p>
             </div>
           </div>
-          <div class="container right js-scroll slide-right">
+          <div class="container right">
             <div class="content">
               <h2>2012/06/01</h2>
               <p>KTU Vaižganto progimnazija <br />Kaunas <br />Lithuanian</p>
@@ -374,19 +391,20 @@
 
       <section class="contactme">
         <div class="contact">
-          <h2 class="hello js-scroll slide-left">
+          <h2 class="hello" data-aos="zoom-in-up">
             Contact <span class="David">Me</span>
           </h2>
-          <p class="aboutme-txt js-scroll slide-right">
+          <p class="aboutme-txt" data-aos="zoom-in-up">
             If you have any questions, please contact me!
           </p>
           <form
             id="contact-form"
             method="POST"
             action="https://formspree.io/f/xpzvnpqe"
+            data-aos="zoom-in-up"
           >
             <input
-              class="fname js-scroll slide-left"
+              class="fname"
               type="text"
               id="name"
               name="name"
@@ -394,7 +412,7 @@
               required
             />
             <input
-              class="fmail js-scroll slide-left"
+              class="fmail"
               type="email"
               id="email"
               name="email"
@@ -402,14 +420,14 @@
               required
             />
             <input
-              class="fsubject js-scroll slide-left"
+              class="fsubject"
               type="text"
               id="subject"
               name="subject"
               placeholder="Subject"
               required
             />
-            <div class="cbm js-scroll slide-right">
+            <div class="cbm">
               <input
                 class="fmessage"
                 type="text"
@@ -418,7 +436,7 @@
                 placeholder="Your Message"
                 required
               />
-              <div class="submitb js-scroll slide-right">
+              <div class="submitb">
                 <button class="bcontact" type="submit">Send Message</button>
               </div>
             </div>
@@ -443,4 +461,8 @@
     </main>
   </body>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
