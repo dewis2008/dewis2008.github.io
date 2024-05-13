@@ -13,7 +13,7 @@ window.addEventListener("scroll", function () {
 
 const text1 = "Hello! ";
 const text2 = "I Am Deividas Pilibaitis!";
-const delay = 70; // Delay in milliseconds between each character
+const delay = 70;
 
 const element1 = document.getElementById("text1");
 const element2 = document.getElementById("text2");
@@ -344,7 +344,7 @@ window.addEventListener("beforeunload", () => {
   carousel1.destroy();
 });
 
-// modal //
+//////////// Modal ///////////
 
 document.addEventListener(
   "click",
@@ -377,7 +377,7 @@ document.addEventListener(
   false
 );
 
-////////////////////
+//////////////////// Mobile Nav /////////////////
 
 let openHam = document.querySelector("#openHam");
 let closeHam = document.querySelector("#closeHam");
