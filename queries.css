@@ -4,7 +4,7 @@
     flex-direction: column;
     padding-top: 10px;
     gap: 1rem;
-    position: fixed;
+    height: 3rem;
   }
 
   .logo {
@@ -28,45 +28,49 @@
 
   .main-nav-link:link,
   .main-nav-link:visited {
-    color: orange;
-  }
-
-  .hero {
-    padding-top: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   .hero-text-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
-    order: 1;
+    margin-top: 1rem;
+    width: 100%;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.625rem;
     text-align: center;
     width: 100%;
   }
 
+  .section-hero {
+    height: auto;
+  }
+
   .hero-description {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     width: 100%;
   }
 
   .aboutme-txt {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .contact-list {
-    font-size: 1.3;
+    font-size: 1rem;
   }
 
-  .sticky {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    margin-bottom: 3.4rem;
-    height: 70px;
+  .contact {
+    padding-top: 0;
+  }
+
+  .time {
+    padding-bottom: 1rem;
   }
 
   .main-nav-list {
@@ -76,7 +80,10 @@
     position: absolute;
     right: 0;
     top: 70px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.822),
+      rgba(0, 0, 0, 0.832)
+    );
     width: 100%;
     height: calc(100vh - 70px);
     padding-top: 60px;
@@ -86,15 +93,13 @@
   .hero {
     display: flex;
     flex-direction: column;
-  }
-
-  .section-hero {
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
   }
 
   .about-me {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   .photo {
@@ -106,12 +111,13 @@
     width: auto;
     margin-left: 0;
     margin-top: 3rem;
+    display: none;
   }
 
   .img-txt {
     display: flex;
     flex-direction: column;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
   }
 
   .photobox {
@@ -146,15 +152,15 @@
     width: 130px;
   }
 
+  .wordpress1 {
+    height: 80px;
+    width: 80px;
+  }
+
   .aboutme-textbox {
     align-items: center;
     margin-left: 0;
     text-align: center;
-    margin-top: 10rem;
-  }
-
-  .skills-txt {
-    padding-top: 5rem;
   }
 
   .downloadcv {
@@ -181,25 +187,28 @@
     width: 6rem;
   }
 
-  .skills-1 {
+  .skills {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .skills-txt {
+    padding-top: 0;
+  }
+
+  .skills-1,
+  .skills-2 {
     gap: 30px;
+    margin-top: 30px;
   }
 
   .portfolio {
-    padding-bottom: 14rem;
-  }
-
-  .time {
-    padding-top: 4.2rem;
-  }
-
-  .contact {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
+    height: auto;
   }
 
   .copytext {
-    width: 80vw;
+    width: 70vw;
     text-align: center;
   }
 
@@ -208,13 +217,19 @@
   }
 }
 
+#myBtn {
+  padding: 15px 20px 15px 20px;
+}
+
+/* /////////////////// TABLET ////////////////// */
+
 @media (min-width: 768px) and (max-width: 991px) {
   .NavBar {
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     gap: 1rem;
-    position: fixed;
+    height: 3rem;
   }
 
   .logo {
@@ -225,11 +240,7 @@
   .ham {
     display: flex;
     align-items: center;
-    gap: 550px;
-  }
-
-  .skills {
-    padding-bottom: 10rem;
+    gap: 500px;
   }
 
   .hamburger {
@@ -242,45 +253,49 @@
 
   .main-nav-link:link,
   .main-nav-link:visited {
-    color: orange;
-  }
-
-  .hero {
-    padding-top: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   .hero-text-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
-    order: 1;
+    margin-top: 1rem;
+    width: 100%;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.625rem;
     text-align: center;
     width: 100%;
   }
 
+  .section-hero {
+    height: auto;
+  }
+
   .hero-description {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     width: 100%;
   }
 
   .aboutme-txt {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .contact-list {
-    font-size: 1.3;
+    font-size: 1rem;
   }
 
-  .sticky {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    margin-bottom: 3.4rem;
-    height: 70px;
+  .contact {
+    padding-top: 0;
+  }
+
+  .time {
+    padding-bottom: 1rem;
   }
 
   .main-nav-list {
@@ -290,7 +305,10 @@
     position: absolute;
     right: 0;
     top: 70px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.822),
+      rgba(0, 0, 0, 0.832)
+    );
     width: 100%;
     height: calc(100vh - 70px);
     padding-top: 60px;
@@ -300,19 +318,17 @@
   .hero {
     display: flex;
     flex-direction: column;
-  }
-
-  .section-hero {
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
   }
 
   .about-me {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   .photo {
-    width: 70vw;
+    width: 60vw;
     height: 10%;
   }
 
@@ -320,12 +336,13 @@
     width: auto;
     margin-left: 0;
     margin-top: 3rem;
+    display: none;
   }
 
   .img-txt {
     display: flex;
     flex-direction: column;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
   }
 
   .photobox {
@@ -360,15 +377,15 @@
     width: 130px;
   }
 
+  .wordpress1 {
+    height: 80px;
+    width: 80px;
+  }
+
   .aboutme-textbox {
     align-items: center;
     margin-left: 0;
     text-align: center;
-    margin-top: 10rem;
-  }
-
-  .skills-txt {
-    padding-top: 10rem;
   }
 
   .downloadcv {
@@ -381,11 +398,12 @@
   }
 
   .carousel-inner {
-    width: 70vw;
+    width: 80vw;
+    height: 35vh;
   }
 
   :root {
-    --carousel-height: 250px;
+    --carousel-height: 220px;
     --carousel-nav-btn-dim: 2em;
     --carousel-caption-padding: 1em;
   }
@@ -395,29 +413,33 @@
     width: 6rem;
   }
 
-  .skills-1 {
+  .skills {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .skills-txt {
+    padding-top: 0;
+  }
+
+  .skills-1,
+  .skills-2 {
     gap: 30px;
+    margin-top: 30px;
   }
 
   .portfolio {
-    padding-bottom: 20rem;
-  }
-
-  .time {
-    padding-top: 4.2rem;
-  }
-
-  .contact {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
+    height: auto;
   }
 
   .copytext {
-    width: 80vw;
+    width: 70vw;
     text-align: center;
   }
 
   .modal-window.small {
     width: 80vw;
   }
+}
 }
