@@ -8,6 +8,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 /* HEADER */
 
 .NavBar {

@@ -379,29 +379,33 @@ document.addEventListener(
 
 //////////////////// Mobile Nav /////////////////
 
+// JavaScript
+
 let openHam = document.querySelector("#openHam");
 let closeHam = document.querySelector("#closeHam");
 let navigationItems = document.querySelector("#navigation-items");
 
-const hamburgerEvent = (navigation, close, open) => {
+const hamburgerEvent = (navigation, close, open, noScroll) => {
   navigationItems.style.display = navigation;
   closeHam.style.display = close;
   openHam.style.display = open;
+  document.body.classList.toggle("no-scroll", noScroll);
 };
 
-openHam.addEventListener("click", () =>
-  hamburgerEvent("flex", "block", "none")
-);
-closeHam.addEventListener("click", () =>
-  hamburgerEvent("none", "none", "block")
-);
+openHam.addEventListener("click", () => {
+  hamburgerEvent("flex", "block", "none", true);
+});
+
+closeHam.addEventListener("click", () => {
+  hamburgerEvent("none", "none", "block", false);
+});
 
 // Event listener for links click
 document.querySelectorAll(".main-nav-link").forEach((link) => {
   link.addEventListener("click", function () {
     if (window.innerWidth < 991) {
-      // Apply hamburgerEvent only for resolutions less than 768px (e.g., mobile)
-      hamburgerEvent("none", "none", "block");
+      // Apply hamburgerEvent only for resolutions less than 991px (e.g., mobile)
+      hamburgerEvent("none", "none", "block", false);
     }
   });
 });
