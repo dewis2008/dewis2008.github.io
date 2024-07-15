@@ -222,6 +222,10 @@
   .modal-window.small {
     width: 80vw;
   }
+
+  .modal-window {
+    border-radius: 10px;
+  }
 }
 
 #myBtn {
@@ -463,13 +467,16 @@
   .modal-window.small {
     width: 80vw;
   }
-}
+  .modal-window {
+    border-radius: 10px;
+  }
 
-.modal-content {
-  width: 90%;
-}
+  .modal-content {
+    width: 90%;
+  }
 
-#langSelect {
-  width: 40%;
-  border-radius: 5px;
+  #langSelect {
+    width: 40%;
+    border-radius: 5px;
+  }
 }
