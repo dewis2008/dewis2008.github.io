@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Deividas Pilibaitis Portfolio Website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Deividas Pilibaitis</title>
+    <link rel="icon" href="img/programming.webp" type="image/icon type" />
+  </head>
+  <body>
+    <main>
+      <section class="section-hero">
+        <div class="NavBar">
+          <div class="ham">
+            <div class="logo1">
+              <a href="#">
+                <img
+                  class="logo"
+                  src="img/logo.webp"
+                  alt="Deividas Pilibaitis logo"
+                />
+              </a>
+            </div>
+            <div class="hamburger">
+              <span id="openHam">&#9776;</span>
+              <span id="closeHam">&#x2716;</span>
+            </div>
+          </div>
+
+          <nav class="main-nav">
+            <ul class="main-nav-list" id="navigation-items">
+              <li>
+                <a
+                  class="main-nav-link"
+                  href=".section-hero"
+                  data-translate="nav_home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link"
+                  href=".about-me"
+                  data-translate="nav_about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link"
+                  href=".skills"
+                  data-translate="nav_skills"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link"
+                  href=".portfolio"
+                  data-translate="nav_portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link"
+                  href=".time"
+                  data-translate="nav_timeline"
+                  >Timeline</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link"
+                  href=".contactme"
+                  data-translate="nav_contact"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <button
+                  class="pButton"
+                  data-translate="change_language"
+                  id="changeLanguageBtn"
+                >
+                  Change Language
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Language Selection Modal -->
+        <div id="languageModal" class="modal">
+          <div class="modal-content modal-window">
+            <span class="close">&times;</span>
+            <h2 class="hello" data-translate="select_language">
+              Select Language
+            </h2>
+            <select id="langSelect">
+              <option value="en" data-translate="option0">English</option>
+              <option value="lt" data-translate="option1">Lithuania</option>
+            </select>
+            <button
+              class="pButton"
+              id="saveLanguageBtn"
+              data-translate="savebtn"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 id="text1"></h1>
+            <h1 id="text2"></h1>
+            <p class="hero-description" data-translate="hero_description">
+              I am a first-year student in applied informatics and programming.
+              I have a lot of motivation to learn new technologies and I am
+              growing every day.
+            </p>
+
+            <button
+              class="pButton"
+              data-translate="portfolio_button"
+              data-target=".portfolio"
+              =""
+            >
+              PORTFOLIO
+            </button>
+          </div>
+          <img class="photo" src="img/Photo1.webp" alt="Deividas Pilibaitis" />
+        </div>
+      </section>
+
+      <section class="about-me">
+        <div class="img-txt">
+          <div class="photobox" data-aos="fade-up" data-aos-duration="1000">
+            <img
+              class="photo1"
+              src="img/Photo.webp"
+              alt="Deividas Pilibaitis"
+            />
+          </div>
+          <div>
+            <div
+              class="aboutme-textbox"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <h2 class="hello">
+                <span data-translate="about_me_title">Hello, I Am</span>
+                <span class="David" data-translate="about_me_title1"
+                  >Deividas Pilibaitis</span
+                >
+              </h2>
+              <p class="aboutme-txt" data-translate="about_me_description">
+                I have hands-on experience with website development tools such
+                as HTML5, CSS3, BOOTSTRAP, WORDPRESS. I continue to deepen my
+                knowledge by learning JavaScript. I am a student at Vši
+                Lithuanian Business College, in the first year of the Applied
+                Informatics and Programming program. I am sure that my
+                enthusiasm and persistence will allow me to learn other
+                programming languages and frameworks without restriction.
+              </p>
+            </div>
+            <div
+              class="contact-list"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <ul>
+                <li data-translate="name">Name</li>
+                <li data-translate="age">Age</li>
+                <li data-translate="location">Location</li>
+                <li data-translate="phone">Phone Number</li>
+                <li data-translate="email">Email</li>
+              </ul>
+              <ul>
+                <li>: Deividas Pilibaitis</li>
+                <li>: 29</li>
+                <li>: Klaipėda</li>
+                <li>: +37064477297</li>
+                <li>: deiwisp@gmail.com</li>
+              </ul>
+            </div>
+            <div class="downloadcv1" data-aos="fade-up" data-aos-duration="500">
+              <a
+                href="CV/Deividas_Pilibaitis_CV.pdf"
+                download="Deividas_Pilibaitis_CV"
+                ><button class="downloadcv" data-translate="download_cv">
+                  Download CV
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="skills-txt" data-aos="fade-right">
+          <h2 class="hello">
+            <span data-translate="skills_title0">My</span>
+            <span class="David" data-translate="skills_title1">Skills</span>
+          </h2>
+          <p class="aboutme-txt" data-translate="skills_description">
+            My journey with HTML, CSS, Bootstrap, Wordpress and JavaScript has
+            been an enriching experience filled with learning, experimentation,
+            and growth. These foundational web development tools have equipped
+            me with the skills and knowledge necessary to bring my creative
+            visions to life on the web.
+          </p>
+        </div>
+
+        <div class="skills-1" data-aos="fade-up">
+          <div class="html">
+            <img class="html1" src="img/html.webp" alt="Html Logo" />
+          </div>
+          <div class="css">
+            <img class="css1" src="img/css3.webp" alt="CSS3 Logo" />
+          </div>
+          <div class="javascript">
+            <img
+              class="javascript1"
+              src="img/javascript.webp"
+              alt="JavaScript Logo"
+            />
+          </div>
+        </div>
+
+        <div class="skills-2" data-aos="fade-up">
+          <div class="bootstrap">
+            <img
+              class="bootstrap1"
+              src="img/bootstrap.webp"
+              alt="Bootstrap Logo"
+            />
+          </div>
+
+          <div class="bootstrap">
+            <img
+              class="wordpress1"
+              src="img/pngwing.com.png"
+              alt="WordPress Logo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div
+          class="skills-txt"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
+          <h2 class="hello">
+            <span data-translate="portfolio_title0">My</span>
+            <span class="David" data-translate="portfolio_title1"
+              >Portfolio</span
+            >
+          </h2>
+          <p class="aboutme-txt" data-translate="portfolio_description">
+            Welcome to my portfolio collection! This curated selection showcases
+            my journey, skills, and creativity across various projects and
+            endeavors. Each piece within this collection represents a unique
+            blend of passion, dedication, and innovation, reflecting my
+            commitment to excellence in every aspect of my work.
+          </p>
+        </div>
+
+        <div
+          class="site-container"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
+          <div
+            id="carousel-1"
+            class="carousel"
+            role="region"
+            aria-labelledby="carousel-1-title"
+          >
+            <div
+              class="slide"
+              role="tabpanel"
+              aria-labelledby="carousel-1-slide-1-title"
+            >
+              <div class="slide-content">
+                <div class="slide-caption">
+                  <!-- Trigger/Open The Modal -->
+                  <button
+                    class="btn-slide1"
+                    data-target="simpleModal_1"
+                    data-toggle="modal"
+                    data-translate="more_button"
+                  >
+                    More
+                  </button>
+                </div>
+
+                <img
+                  class="inerior1"
+                  src="img/interior1.webp"
+                  alt="Interior design landing page"
+                />
+              </div>
+            </div>
+
+            <div
+              class="slide"
+              role="tabpanel"
+              aria-labelledby="carousel-1-slide-2-title"
+            >
+              <div class="slide-content">
+                <div class="slide-caption">
+                  <button
+                    class="btn-slide1"
+                    data-target="simpleModal_2"
+                    data-toggle="modal"
+                    data-translate="more_button"
+                  >
+                    More
+                  </button>
+                </div>
+                <img
+                  src="img/ignitis1.webp"
+                  alt="Ignitis Newspaper"
+                  width="800"
+                  height="350"
+                />
+              </div>
+            </div>
+
+            <div
+              class="slide"
+              role="tabpanel"
+              aria-labelledby="carousel-1-slide-3-title"
+            >
+              <div class="slide-content">
+                <div class="slide-caption">
+                  <button
+                    class="btn-slide1"
+                    data-target="simpleModal_3"
+                    data-toggle="modal"
+                    data-translate="more_button"
+                  >
+                    More
+                  </button>
+                </div>
+
+                <img
+                  src="img/portfolio1.webp"
+                  alt="Portfolio website landing page"
+                  width="800"
+                  height="350"
+                />
+              </div>
+            </div>
+            <div
+              class="slide"
+              role="tabpanel"
+              aria-labelledby="carousel-1-slide-4-title"
+            >
+              <div class="slide-content">
+                <div class="slide-caption">
+                  <button
+                    class="btn-slide1"
+                    data-target="simpleModal_4"
+                    data-toggle="modal"
+                    data-translate="more_button"
+                  >
+                    More
+                  </button>
+                </div>
+
+                <img
+                  src="img/geobaitas.webp"
+                  alt="geobaitas.lt website main page"
+                  width="800"
+                  height="350"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="simpleModal_1" class="modal">
+          <div class="modal-window small">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <p class="modal-description" data-translate="interior">
+              Interior design made with HTML and BOOTSRAP
+            </p>
+            <img
+              width="100%"
+              src="img/interior2.webp"
+              alt="Interior landing page"
+            />
+          </div>
+        </div>
+
+        <div id="simpleModal_2" class="modal">
+          <div class="modal-window small">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <p class="modal-description" data-translate="ignitis">
+              The selection task for Ignitis made with HTML and CSS
+            </p>
+            <img
+              width="100%"
+              src="img/ignitis2.webp"
+              alt="Ignitis Newsletter"
+            />
+          </div>
+        </div>
+
+        <div id="simpleModal_3" class="modal">
+          <div class="modal-window small">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <p class="modal-description" data-translate="portfolio">
+              My portfolio website made with HTML, CSS, JS, AOS.js
+            </p>
+            <img
+              width="100%"
+              src="img/portfolio1.webp"
+              alt="Portfolio website"
+            />
+          </div>
+        </div>
+
+        <div id="simpleModal_4" class="modal">
+          <div class="modal-window small">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <p class="modal-description" data-translate="geobaitas">
+              Geobaitas.lt website made using Wordpress
+            </p>
+            <img
+              width="100%"
+              src="img/geobaitas.webp"
+              alt="geobaitas.lt website landing page"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="time">
+        <div class="timeline" data-aos="zoom-in-up">
+          <div class="container left">
+            <div class="content">
+              <h2>2023/09/01</h2>
+              <p>Lietuvos Verslo Kolegija <br />Klaipėda <br />Lietuva</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>2015-2023</h2>
+              <p data-translate="timeline">
+                I lived in Denmark and worked in a job unrelated to my current
+                profession.
+              </p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2>2014/06/01</h2>
+              <p>
+                Viešoji įstaiga Kauno mechanikos mokykla <br />Kaunas
+                <br />Lietuva
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>2012/06/01</h2>
+              <p>KTU Vaižganto progimnazija <br />Kaunas <br />Lietuva</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contactme">
+        <div class="contact">
+          <h2 class="hello" data-aos="zoom-in-up">
+            <span data-translate="contact_title0">Contact</span>
+            <span class="David" data-translate="contact_title1">Me</span>
+          </h2>
+          <p
+            class="aboutme-txt"
+            data-aos="zoom-in-up"
+            data-translate="contact_description"
+          >
+            If you have any questions, please contact me!
+          </p>
+          <form
+            id="contact-form"
+            method="POST"
+            action="https://formspree.io/f/xpzvnpqe"
+            data-aos="zoom-in-up"
+          >
+            <input
+              class="fname"
+              data-translate="name"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="fmail"
+              data-translate="email"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              class="fsubject"
+              type="text"
+              id="subject"
+              name="subject"
+              data-translate="subject"
+              placeholder="Subject"
+              required
+            />
+            <div class="cbm">
+              <input
+                class="fmessage"
+                data-translate="message"
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              />
+              <div class="submitb">
+                <button
+                  class="bcontact"
+                  type="submit"
+                  data-translate="send_message"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <footer>
+          <div class="social">
+            <a href="https://www.facebook.com/triusis.nipadielu" target="_blank"
+              ><img src="img/facebook.webp" alt="Facebook Icon"
+            /></a>
+            <a
+              href="https://www.instagram.com/deividaspilibaitis/"
+              target="_blank"
+              ><img src="img/instagram.webp" alt="Instagram Icon"
+            /></a>
+          </div>
+          <p class="copytext" data-translate="copyright">
+            Copyright © 2024 Deividas Pilibaitis | All Rights Reserved
+          </p>
+        </footer>
+      </section>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+    </main>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
