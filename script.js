@@ -1,13 +1,11 @@
-// Sticky NavBar //
-
-// const nav = document.querySelector(".NavBar");
-// window.addEventListener("scroll", function () {
-//   if (document.documentElement.scrollTop > 20) {
-//     nav.classList.add("sticky");
-//   } else {
-//     nav.classList.remove("sticky");
-//   }
-// });
+const nav = document.querySelector(".NavBar");
+window.addEventListener("scroll", function () {
+  if (document.documentElement.scrollTop > 20) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+});
 
 // TEXT TYPING EFFECT //
 
@@ -18,7 +16,6 @@ const delay = 70;
 const element1 = document.getElementById("text1");
 const element2 = document.getElementById("text2");
 
-// Function to run typewriter effect for a given text and element
 function typeWriterEffect(text, element, callback, typingSpeed = 70) {
   let i = 0;
   element.style.opacity = 0;
@@ -34,8 +31,8 @@ function typeWriterEffect(text, element, callback, typingSpeed = 70) {
         clearInterval(interval);
         if (callback) callback();
       }
-    }, typingSpeed); // Use the customizable typing speed
-  }, 200); // Short delay before starting to type
+    }, typingSpeed); // typing speed
+  }, 200); // typing delay
 }
 
 // SMOOTH SCROLLING //
@@ -73,7 +70,6 @@ const JSCarousel = ({
   enableAutoplay = false,
   autoplayInterval = 2000,
 }) => {
-  // Find the carousel element in the DOM.
   const carousel = document.querySelector(carouselSelector);
 
   // If carousel element is not found, log an error and exit.
@@ -412,10 +408,8 @@ document.querySelectorAll(".main-nav-link").forEach((link) => {
 
 /////////// Scroll to top //////////
 
-// Get the button:
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
@@ -428,10 +422,11 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+// Language changer
 
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("languageModal");
@@ -440,11 +435,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const saveBtn = document.getElementById("saveLanguageBtn");
   const langSelect = document.getElementById("langSelect");
 
-  // Array of elements to translate
   const elementsToTranslate = [
     { id: "text1", key: "text1" },
     { id: "text2", key: "text2" },
-    // Add more objects for other elements as needed
   ];
 
   // Open the modal

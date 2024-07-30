@@ -1,4 +1,10 @@
 @media screen and (max-width: 767px) {
+  section,
+  footer {
+    overflow: hidden;
+    white-space: wrap;
+  }
+
   .NavBar {
     display: flex;
     flex-direction: column;
@@ -16,12 +22,14 @@
   .logo {
     width: 7rem;
     height: 3rem;
+    margin-left: 3.125rem;
   }
 
   .ham {
     display: flex;
     align-items: center;
-    gap: 230px;
+    gap: 12.5rem;
+    margin-right: 3.125rem;
   }
 
   .hamburger {
@@ -43,7 +51,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4.5rem;
     width: 100%;
   }
 
@@ -55,6 +62,7 @@
 
   .section-hero {
     height: auto;
+    width: 100vw;
   }
 
   .hero-description {
@@ -93,19 +101,21 @@
     width: 100%;
     height: 100%;
     padding-top: 60px;
-    gap: 50px;
+    gap: 40px;
   }
 
   .hero {
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
+    padding-top: 6.25rem;
   }
 
   .about-me {
     display: flex;
     flex-direction: column;
     height: auto;
+    padding-top: 6.25rem;
   }
 
   .photo {
@@ -167,7 +177,6 @@
     align-items: center;
     margin-left: 0;
     text-align: center;
-    margin-top: 4.5rem;
   }
 
   .downloadcv {
@@ -197,10 +206,6 @@
   .skills {
     height: auto;
     padding-bottom: 1rem;
-  }
-
-  .skills-txt {
-    padding-top: 4.5rem;
   }
 
   .skills-1,
@@ -288,7 +293,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4.5rem;
     width: 100%;
   }
 
@@ -344,6 +348,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
+    padding-top: 6.25rem;
   }
 
   .about-me {
@@ -442,10 +447,6 @@
   .skills {
     height: auto;
     padding-bottom: 1rem;
-  }
-
-  .skills-txt {
-    padding-top: 4.5rem;
   }
 
   .skills-1,
