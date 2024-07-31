@@ -31,20 +31,14 @@
     <main>
       <section class="section-hero">
         <div class="NavBar">
-          <div class="ham">
-            <div class="logo1">
-              <a href="#">
-                <img
-                  class="logo"
-                  src="img/logo.webp"
-                  alt="Deividas Pilibaitis logo"
-                />
-              </a>
-            </div>
-            <div class="hamburger">
-              <span id="openHam">&#9776;</span>
-              <span id="closeHam">&#x2716;</span>
-            </div>
+          <div class="logo1">
+            <a href="#">
+              <img
+                class="logo"
+                src="img/logo.webp"
+                alt="Deividas Pilibaitis logo"
+              />
+            </a>
           </div>
 
           <nav class="main-nav">
@@ -107,6 +101,10 @@
                 </button>
               </li>
             </ul>
+            <div class="hamburger">
+              <span id="openHam">&#9776;</span>
+              <span id="closeHam">&#x2716;</span>
+            </div>
           </nav>
         </div>
 
@@ -206,13 +204,35 @@
               </ul>
             </div>
             <div class="downloadcv1" data-aos="fade-up" data-aos-duration="500">
-              <a
-                href="CV/Deividas_Pilibaitis_CV.pdf"
-                download="Deividas_Pilibaitis_CV"
-                ><button class="downloadcv" data-translate="download_cv">
-                  Download CV
-                </button></a
+              <button
+                class="downloadcv"
+                data-translate="download_cv"
+                data-target="downloadModal"
+                data-toggle="modal"
               >
+                Download CV
+              </button>
+            </div>
+
+            <!-- The Modal -->
+            <div id="downloadModal" class="modal">
+              <div class="modal-window small">
+                <span class="close" data-dismiss="modal">&times;</span>
+                <div class="modal-buttons">
+                  <a
+                    href="CV/Deividas_Pilibaitis_CV_EN.pdf"
+                    download="Deividas_Pilibaitis_CV_EN"
+                  >
+                    <button class="downloadcv2">CV_EN</button>
+                  </a>
+                  <a
+                    href="CV/Deividas_Pilibaitis_CV_LT.pdf"
+                    download="Deividas_Pilibaitis_CV_LT"
+                  >
+                    <button class="downloadcv2">CV_LT</button>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -465,6 +485,17 @@
 
       <section class="time">
         <div class="timeline" data-aos="zoom-in-up">
+          <div class="container right">
+            <div class="content">
+              <h2>2024/05/20 - 2024/07/20</h2>
+              <p>
+                UAB "Ainera" <br /><span data-translate="internship"
+                  >Intership: Website development using Wordpress</span
+                >
+                <br /><span data-translate="remote">Remote</span> <br />Lietuva
+              </p>
+            </div>
+          </div>
           <div class="container left">
             <div class="content">
               <h2>2023/09/01</h2>
@@ -473,7 +504,7 @@
           </div>
           <div class="container right">
             <div class="content">
-              <h2>2015-2023</h2>
+              <h2>2015 - 2023</h2>
               <p data-translate="timeline">
                 I lived in Denmark and worked in a job unrelated to my current
                 profession.
@@ -525,6 +556,7 @@
               name="name"
               placeholder="Name"
               required
+              autocomplete="on"
             />
             <input
               class="fmail"
@@ -534,6 +566,7 @@
               name="email"
               placeholder="Email"
               required
+              autocomplete="on"
             />
             <input
               class="fsubject"
@@ -582,7 +615,13 @@
           </p>
         </footer>
       </section>
-      <button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img
+          class="simg"
+          src="img/angle-circle-arrow-up-icon.png"
+          alt="Arrow up"
+        />
+      </button>
     </main>
   </body>
   <script src="script.js"></script>
